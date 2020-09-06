@@ -1,3 +1,5 @@
+var scroll = new SmoothScroll('a[href*="#"]');
+
 $(document).ready(function () {
 
     // Call Instagram API
