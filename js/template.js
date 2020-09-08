@@ -29,6 +29,48 @@ $(document).ready(function () {
         },
         error: function (error) { }
     });
+
+    // Listen for newsletter subscription
+    $( "#submitNewsletter" ).click(function() {
+        var email = document.getElementById("newsletter-email").value;
+        if (email === "") {
+            
+        }
+        else {
+            console.log(email);
+            document.getElementById("submitNewsletter").innerHTML = "Submitting...";
+
+            // AJAX Request to get data
+            $.ajax({
+                type: "POST",
+                url: "https://mx-out-mixspace.thedanielmark.com/try-mixspace.php",
+                datatype: "html",
+                data: {
+                    email: email,
+                },
+                success: function (response) {
+                    console.log(response);
+                    var parsedResponse = JSON.parse(response);
+                    if (parsedResponse === "success") {
+                        document.getElementById("newsletter-success").classList.remove("d-none");
+                        document.getElementById("newsletter-fail").classList.add("d-none");
+
+                        document.getElementById("submitNewsletter").innerHTML = "Submit";
+
+                        document.getElementById("newsletter-email").value = "";
+                    }
+                    else {
+                        document.getElementById("newsletter-success").classList.add("d-none");
+                        document.getElementById("newsletter-fail").classList.remove("d-none");
+
+                        document.getElementById("submitNewsletter").innerHTML = "Submit";
+                    }
+                },
+                error: function (error) { }
+            });
+        }
+    });
+
 });
 
 function timeConverter(UNIX_timestamp) {
