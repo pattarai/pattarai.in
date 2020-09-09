@@ -22,8 +22,7 @@
     <meta content="summary_large_image" name="twitter:card" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta content="Webflow" name="generator" />
-    <link href="css/normalize.css"
-        rel="stylesheet" type="text/css" />
+    <link href="css/normalize.css" rel="stylesheet" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
     <script type="text/javascript">
         WebFont.load({
@@ -52,9 +51,9 @@
                 (n.className += t + "touch");
         })(window, document);
     </script>
-    <link href="https://assets.website-files.com/5f258b9ce11bfe85ce43cb46/5f3e792ef147999419083675_Webhook.png"
+    <link href="images/favicon.png"
         rel="shortcut icon" type="image/x-icon" />
-    <link href="https://assets.website-files.com/5f258b9ce11bfe85ce43cb46/5f3e7932dc5f8400a214b601_Webhook-big.png"
+    <link href="images/favicon.png"
         rel="apple-touch-icon" />
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
@@ -117,9 +116,9 @@
                             those dreams and bring them to reality to help make the world a better place!
                         </div>
                         <div class="button-wrapper padding">
-                            <a href="#" class="button line w-button">Contact Us</a>
+                            <a href="#contact" class="button line w-button">Contact Us</a>
                             <div class="button-margin">
-                                <a href="#" class="button w-button">Partner With Us</a>
+                                <a href="#contact" class="button w-button">Partner With Us</a>
                             </div>
                         </div>
                     </div>
@@ -143,7 +142,8 @@
                             some
                             challenging problems.
                         </p>
-                        <div class="button-wrapper"><a href="#" class="button w-button">Register Your Teams</a></div>
+                        <div class="button-wrapper"><a href="https://forms.gle/37wfzNVp1xSqcRH1A"
+                                class="button w-button" target="top">Register Your Teams</a></div>
                     </div>
                     <div class="w-layout-grid promo-side-grid">
                         <div class="promo-features">
@@ -192,8 +192,10 @@
                     <h2 class="text-header left">Be a part of Elevate, our Free & Open Source Conference.<br></h2>
                     <div class="divider"></div>
                     <p>
-                        A knowledge-sharing platform to build expertise through exchange of ideas and innovations.<br></p>
-                    <div class="button-wrapper"><a href="#" class="button w-button">Buy Tickets!</a>
+                        A knowledge-sharing platform to build expertise through exchange of ideas and innovations.<br>
+                    </p>
+                    <div class="button-wrapper"><a href="https://elevate.pattarai.in/" class="button w-button">Buy
+                            Tickets!</a>
                     </div>
                 </div>
             </div>
@@ -280,29 +282,27 @@
                     <div class="w-dyn-list">
                         <div role="list" class="w-dyn-items">
                             <div role="listitem" class="w-dyn-item">
-                                <a href="#" class="link-case w-inline-block">
-                                    <div class="cause-card">
-                                        <div style="background-image: url('images/intacto_event.png');"
-                                            class="cause-top-image"></div>
-                                        <div class="case-info">
-                                            <!-- <div class="avatar">
+                                <div class="cause-card">
+                                    <div style="background-image: url('images/intacto_event.png');"
+                                        class="cause-top-image"></div>
+                                    <div class="case-info">
+                                        <!-- <div class="avatar">
                                                 <img src="https://assets.website-files.com/5f287c509db7355a9352ca81/5f31eaea55d0946e48806461_Untitled-4.svg"
                                                     alt="" class="image" />
                                             </div> -->
-                                            <br><br>
-                                            <div class="cause-title">
-                                                Intacto - Pattarai's Virtualized Treasure Hunt
-                                            </div>
-                                            <p>
-                                                A 4 hour online treasure hunt with puzzles based on subjects ranging
-                                                from physics, blah blah to blah blah.
-                                            </p>
-                                            <div class="blog-date padding-top" style="margin-top: 10px;">
-                                                August 8th, 2020
-                                            </div>
+                                        <br><br>
+                                        <div class="cause-title">
+                                            Intacto - Pattarai's Virtualized Treasure Hunt
+                                        </div>
+                                        <p>
+                                            A 4 hour online treasure hunt with puzzles based on subjects ranging
+                                            from physics, blah blah to blah blah.
+                                        </p>
+                                        <div class="blog-date padding-top" style="margin-top: 10px;">
+                                            August 8th, 2020
                                         </div>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -313,10 +313,10 @@
                                 <strong>Subscribe To Pattarai's<br />Monthly Newsletter</strong>
                             </div>
                             <div class="cause-form w-form">
-                                <form id="email-form" name="email-form" data-name="Email Form" class="form">
-                                    <input type="email" class="text-field w-input" maxlength="256" name="email-2"
-                                        data-name="Email 2" placeholder="Your Email" id="newsletter-email" required="" /><input
-                                        type="submit" value="Submit" data-wait="Please wait..."
+                                <form class="form">
+                                    <input type="email" class="text-field w-input" maxlength="256" data-name="Email 2"
+                                        placeholder="Your Email" id="newsletter-email" required="" /><input
+                                        type="submit" value="Subscribe" data-wait="Please wait..."
                                         class="submit-button w-button" id="submitNewsletter" />
                                 </form>
                                 <div class="success-message-new w-form-done" id="newsletter-success">
@@ -335,91 +335,84 @@
                     <div class="w-dyn-list">
                         <div role="list" class="w-dyn-items">
                             <div role="listitem" class="w-dyn-item">
-                                <a href="#"
-                                    class="link-case w-inline-block">
-                                    <div class="cause-card">
-                                        <div style="background-image: url('images/csbootcamp_event.jpg');" class="cause-top-image"></div>
-                                        <div class="case-info">
-                                            <!-- <div class="avatar">
+                                <div class="cause-card">
+                                    <div style="background-image: url('images/csbootcamp_event.jpg');"
+                                        class="cause-top-image"></div>
+                                    <div class="case-info">
+                                        <!-- <div class="avatar">
                                                 <img src="https://assets.website-files.com/5f287c509db7355a9352ca81/5f31eaf794fcb174fbcbd750_Untitled-5.svg"
                                                     alt="" class="image" />
                                             </div> -->
-                                            <br>
-                                            <div class="cause-title" style="margin-top: 10px;">
-                                                Computer Science Bootcamp
-                                            </div>
-                                            <p>
-                                                3 day computer science bootcamp conducted by Fabian Ferno, Community Manager,
-                                                Pattarai.
-                                            </p>
-                                            <div class="blog-date padding-top">
-                                                July, 2020
-                                            </div>
+                                        <br>
+                                        <div class="cause-title" style="margin-top: 10px;">
+                                            Computer Science Bootcamp
+                                        </div>
+                                        <p>
+                                            3 day computer science bootcamp conducted by Fabian Ferno, Community
+                                            Manager,
+                                            Pattarai.
+                                        </p>
+                                        <div class="blog-date padding-top">
+                                            July, 2020
                                         </div>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="w-dyn-list">
                         <div role="list" class="w-dyn-items">
                             <div role="listitem" class="w-dyn-item">
-                                <a href="#"
-                                    class="link-case w-inline-block">
-                                    <div class="cause-card">
-                                        <div style="
+                                <div class="cause-card">
+                                    <div style="
                           background-image: url('images/webdevworkshop_event.jpg');
                         " class="cause-top-image"></div>
-                                        <div class="case-info">
-                                            <!-- <div class="avatar">
+                                    <div class="case-info">
+                                        <!-- <div class="avatar">
                                                 <img src="https://assets.website-files.com/5f287c509db7355a9352ca81/5f31eb008ab7654ecc462aaf_Untitled-3.svg"
                                                     alt="" class="image" />
                                             </div> -->
-                                            <br>
-                                            <div class="cause-title" style="margin-top: 10px;">
-                                                Web Development Workshop
-                                            </div>
-                                            <p>
-                                                5 day web development workshop conducted by Daniel Mark, Head of
-                                                Developer Community, Pattarai.
-                                            </p>
-                                            <div class="blog-date padding-top">
-                                                July, 2020
-                                            </div>
+                                        <br>
+                                        <div class="cause-title" style="margin-top: 10px;">
+                                            Web Development Workshop
+                                        </div>
+                                        <p>
+                                            5 day web development workshop conducted by Daniel Mark, Head of
+                                            Developer Community, Pattarai.
+                                        </p>
+                                        <div class="blog-date padding-top">
+                                            July, 2020
                                         </div>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="w-dyn-list">
                         <div role="list" class="w-dyn-items">
                             <div role="listitem" class="w-dyn-item">
-                                <a href="#"
-                                    class="link-case w-inline-block">
-                                    <div class="cause-card">
-                                        <div style="
+                                <div class="cause-card">
+                                    <div style="
                           background-image: url('images/appdevworkshop_event.jpg');
                         " class="cause-top-image"></div>
-                                        <div class="case-info">
-                                            <!-- <div class="avatar">
+                                    <div class="case-info">
+                                        <!-- <div class="avatar">
                                                 <img src="https://assets.website-files.com/5f287c509db7355a9352ca81/5f31eaea55d0946e48806461_Untitled-4.svg"
                                                     alt="" class="image" />
                                             </div> -->
-                                            <br>
-                                            <div class="cause-title" style="margin-top: 10px;">
-                                                Flutter App Development Workshop
-                                            </div>
-                                            <p>
-                                                11 day Flutter app development workshop conducted by Pon Rahul,
-                                                President, Pattarai.
-                                            </p>
-                                            <div class="blog-date padding-top">
-                                                July, 2020
-                                            </div>
+                                        <br>
+                                        <div class="cause-title" style="margin-top: 10px;">
+                                            Flutter App Development Workshop
+                                        </div>
+                                        <p>
+                                            11 day Flutter app development workshop conducted by Pon Rahul,
+                                            President, Pattarai.
+                                        </p>
+                                        <div class="blog-date padding-top">
+                                            July, 2020
                                         </div>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -458,9 +451,11 @@
                                     width="32" alt="" class="white-image-icon" />
                             </div>
                             <h4 class="contact-title"><strong>Contact Us</strong></h4>
-                            <div class="contact-info">+91 94873 23890</div>
-                            <div>
-                                <a href="#" class="contact-info">hello@pattarai.in<br /></a>
+                            <div class="contact-info">
+                                <a href="tel:+919487323890" class="contact-info">+91 94873 23890</a>
+                            </div>
+                            <div class="contact-info">
+                                <a href="tel:+9104428178490" class="contact-info">+91 044 2817 8490<br /></a>
                             </div>
                         </div>
                         <div class="contact-wrapper">
@@ -470,12 +465,14 @@
                                     src="https://assets.website-files.com/5f258b9ce11bfe85ce43cb46/5f2d75c5822ea6111f9abe09_icons8-region-100.png"
                                     width="32" alt="" class="white-image-icon" />
                             </div>
-                            <h4 class="contact-title"><strong>Find Us On The Web</strong></h4>
+                            <h4 class="contact-title"><strong>Mail Us</strong></h4>
                             <div>
-                                <a href="#" class="contact-info">www.pattarai.in<br /></a>
+                                <a href="mailto:hello@pattarai.in" target="top"
+                                    class="contact-info">hello@pattarai.in<br /></a>
                             </div>
                             <div>
-                                <a href="#" class="contact-info">hello@pattarai.in<br /></a>
+                                <a href="mailto:inquiries@pattarai.in" target="top"
+                                    class="contact-info">inquiries@pattarai.in<br /></a>
                             </div>
                         </div>
                     </div>
@@ -488,36 +485,36 @@
                             <form id="email-form-3" name="email-form-3" data-name="Email Form 3" class="left-form">
                                 <div class="w-layout-grid grid-contact">
                                     <div id="w-node-48c95c9c6e1d-e603549d" class="w-clearfix"><input type="text"
-                                            id="Name-2" name="Name-2" data-name="Name 2"
+                                            id="full_name" name="Name-2" data-name="Name 2"
                                             placeholder="Enter your full name or name of the organization you represent"
-                                            maxlength="256" class="text-field-contact w-input"></div>
+                                            maxlength="256" class="text-field-contact w-input" required></div>
 
-                                    <div class="w-clearfix"><input type="email" id="Email" name="Email"
-                                            data-name="Email" placeholder="Enter email" maxlength="256"
-                                            class="text-field-contact w-input"></div>
+                                    <div class="w-clearfix"><input type="email" id="email-contact" name="Email"
+                                            data-name="" placeholder="Enter email" maxlength="256"
+                                            class="text-field-contact w-input" required></div>
 
-                                    <div class="w-clearfix"><input type="text" id="Name" name="Name" data-name="Name"
+                                    <div class="w-clearfix"><input type="text" id="phone" name="Name" data-name="Name"
                                             placeholder="Enter phone number" maxlength="13"
-                                            class="text-field-contact w-input"></div>
+                                            class="text-field-contact w-input" required></div>
 
                                     <div id="w-node-48c95c9c6e1d-e603549d" class="w-clearfix"><input type="text"
-                                            id="Name-2" name="Name-2" data-name="Name 2"
+                                            id="subject" name="Name-2" data-name="Name 2"
                                             placeholder="Enter your subject" maxlength="256"
-                                            class="text-field-contact w-input"></div>
+                                            class="text-field-contact w-input" required></div>
 
-                                    <div id="w-node-48c95c9c6e21-e603549d" class="w-clearfix"><textarea id="Description"
+                                    <div id="w-node-48c95c9c6e21-e603549d" class="w-clearfix"><textarea id="description"
                                             name="Description" data-name="Description" maxlength="5000"
-                                            placeholder="Description"
-                                            class="text-field-contact message w-input"></textarea></div><input
-                                        type="submit" value="Submit Your Request" data-wait="Please wait..."
-                                        id="w-node-48c95c9c6e25-e603549d" class="button w-button">
+                                            placeholder="Description" class="text-field-contact message w-input"
+                                            required></textarea></div>
+                                    <input type="submit" value="Submit Your Request" data-wait="Please wait..."
+                                        id="w-node-7dfda0f53e4c-2c0354a7" class="button w-button">
                                 </div>
                                 <div class="center-button-block"></div>
                             </form>
-                            <div class="success-message-new w-form-done">
+                            <div class="success-message-new w-form-done" id="contact-success">
                                 <div>Thank you! Your submission has been received!</div>
                             </div>
-                            <div class="error-message-second w-form-fail">
+                            <div class="error-message-second w-form-fail" id="contact-fail">
                                 <div>Oops! Something went wrong while submitting the form</div>
                             </div>
                         </div>
@@ -531,7 +528,8 @@
                     <div class="footer-column-info big padding-bottom">
                         <a href="#" class="intro w-nav-brand">
                             <h3 class="logo-heading footer">
-                                <img src="images/logo_tamil.png" height="40px"><!-- Pattarai<span class="color white">.in</span> -->
+                                <img src="images/logo_tamil.png" height="40px">
+                                <!-- Pattarai<span class="color white">.in</span> -->
                             </h3>
                         </a>
                         <p class="white-footer-text">
@@ -540,13 +538,14 @@
                     </div>
                     <div class="footer-column-div">
                         <h2 class="footer-heading white">Connect With Us</h2>
-                        <div class="team-social-div"><a href="#" class="link-block-social w-inline-block">
+                        <div class="team-social-div"><a href="https://www.facebook.com/LicetPattaraiAdmin"
+                                class="link-block-social w-inline-block" target="top">
                                 <div class="social-icon facebook-icon light"></div>
-                            </a><a href="#" class="link-block-social w-inline-block">
+                            </a><a href="https://instagram.com/licetpattarai" target="top"
+                                class="link-block-social w-inline-block">
                                 <div class="social-icon instagram-icon light"></div>
-                            </a><a href="#" class="link-block-social w-inline-block">
-                                <div class="social-icon google-plus-icon light"></div>
-                            </a><a href="#" class="link-block-twitter w-inline-block">
+                            </a><a href="https://twitter.com/licetpattarai" target="top"
+                                class="link-block-twitter w-inline-block">
                                 <div class="social-icon twitter-icon light"></div>
                             </a></div>
                     </div>
@@ -557,7 +556,7 @@
                         <a href="https://pattarai.in/" target="_blank"><strong
                                 class="white-footer-link">Pattarai</strong></a> | All Rights Reserved
                     </div>
-                    <div class="footer-bottom-div">
+                    <!-- <div class="footer-bottom-div">
                         <div class="footer-bottom-text">
                             <a href="#" class="white-footer-link">Licences</a>
                         </div>
@@ -567,7 +566,7 @@
                         <div class="footer-bottom-text">
                             <a href="#" class="white-footer-link">Style Guide</a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </footer>

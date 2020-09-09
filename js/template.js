@@ -31,7 +31,7 @@ $(document).ready(function () {
     });
 
     // Listen for newsletter subscription
-    $( "#submitNewsletter" ).click(function() {
+    $("#submitNewsletter").click(function() {
         var email = document.getElementById("newsletter-email").value;
         if (email === "") {
             
@@ -64,6 +64,54 @@ $(document).ready(function () {
                         document.getElementById("newsletter-fail").classList.remove("d-none");
 
                         document.getElementById("submitNewsletter").innerHTML = "Submit";
+                    }
+                },
+                error: function (error) { }
+            });
+        }
+    });
+
+    // Listen for contact form submission
+    $("#w-node-7dfda0f53e4c-2c0354a7").click(function() {
+        var full_name = document.getElementById("full_name").value;
+        var email = document.getElementById("email-contact").value;
+        var phone = document.getElementById("phone").value;
+        var subject = document.getElementById("subject").value;
+        var description = document.getElementById("description").value;
+
+        if (full_name == "" || email === "" || phone == "" || subject == "" || description == "") {
+            
+        }
+        else {
+            console.log(email);
+            document.getElementById("w-node-7dfda0f53e4c-2c0354a7").innerHTML = "Submitting...";
+
+            // AJAX Request to get data
+            $.ajax({
+                type: "POST",
+                url: "https://mx-out-mixspace.thedanielmark.com/pattarai-contact.php",
+                datatype: "html",
+                data: {
+                    full_name: full_name,
+                    email: email,
+                    phone: phone,
+                    subject: subject,
+                    description: description
+                },
+                success: function (response) {
+                    console.log(response);
+                    var parsedResponse = JSON.parse(response);
+                    if (parsedResponse === "success") {
+                        document.getElementById("contact-success").classList.remove("d-none");
+                        document.getElementById("contact-fail").classList.add("d-none");
+
+                        document.getElementById("submitNw-node-7dfda0f53e4c-2c0354a7ewsletter").innerHTML = "Submit";
+                    }
+                    else {
+                        document.getElementById("contact-success").classList.add("d-none");
+                        document.getElementById("contact-fail").classList.remove("d-none");
+
+                        document.getElementById("w-node-7dfda0f53e4c-2c0354a7").innerHTML = "Submit";
                     }
                 },
                 error: function (error) { }
